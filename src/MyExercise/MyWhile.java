@@ -19,5 +19,5 @@ public class MyWhile {
 //           String[] testo = str.split("");
 //            System.out.println(String.join(",", testo));
 //       } while (!str.equals(":q"));
-//        sc.close();
+//
 //        System.out.println("programma chiuso");

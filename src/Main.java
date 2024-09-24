@@ -19,18 +19,18 @@ public class Main {
         //esercizio 2:
         Scanner sc = new Scanner(System.in);
         System.out.print("Inserisci un numero tra 0 e 3: ");
-         int num = Integer.parseInt(sc.nextLine());
-         System.out.println("Hai inserito il numero :" + MySwitch.stampaNumero(num));
+        int num = Integer.parseInt(sc.nextLine());
+        System.out.println("Hai inserito il numero :" + MySwitch.stampaNumero(num));
 
         //Esercizio 3:
         MyWhile es3 = new MyWhile();
-        System.out.println("Inserisci una stringa");
-        String str = sc.nextLine();
-        System.out.println(es3.suddividiStringa(str));
 
-
-
-
+        String str;
+        do {
+            System.out.println("Inserisci una stringa");
+            str = sc.nextLine();
+            System.out.println(es3.suddividiStringa(str));
+        } while (!str.equals(":q"));
 
 
     }
