@@ -3,14 +3,14 @@ package MyExercise;
 import java.util.Scanner;
 
 public class MySwitch {
-    public static void main(String[] args) {
 
-        System.out.print("Inserisci un numero tra 0 e 3: ");
-        Scanner sc = new Scanner(System.in);
-        int test = sc.nextInt();
-        System.out.print(stampaNumero(test));
-        sc.close();
-    }
+
+//        System.out.print("Inserisci un numero tra 0 e 3: ");
+//        Scanner sc = new Scanner(System.in);
+//        int test = sc.nextInt();
+//        System.out.print(stampaNumero(test));
+//        sc.close();
+
     public static String stampaNumero(int num) {
         String risultato;
         switch (num) {

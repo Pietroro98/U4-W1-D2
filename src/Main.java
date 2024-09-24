@@ -1,3 +1,9 @@
+import MyExercise.MySwitch;
+import MyExercise.MyWhile;
+
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         String str1 = "Mario";
@@ -6,10 +12,26 @@ public class Main {
         System.out.println("La stringa " + str1 + " ha lunghezza pari? " + stringaPariDispari(str1));
         System.out.println("La stringa " + str2 + " ha lunghezza pari? " + stringaPariDispari(str2));
 
-
         //anno
         Boolean anno = annoBisestile(2000);
         System.out.println(anno);
+
+        //esercizio 2:
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Inserisci un numero tra 0 e 3: ");
+         int num = Integer.parseInt(sc.nextLine());
+         System.out.println("Hai inserito il numero :" + MySwitch.stampaNumero(num));
+
+        //Esercizio 3:
+        MyWhile es3 = new MyWhile();
+        System.out.println("Inserisci una stringa");
+        String str = sc.nextLine();
+        System.out.println(es3.suddividiStringa(str));
+
+
+
+
+
 
     }
 
