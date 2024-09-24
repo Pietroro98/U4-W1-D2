@@ -1,3 +1,4 @@
+import MyExercise.MyFor;
 import MyExercise.MySwitch;
 import MyExercise.MyWhile;
 
@@ -26,12 +27,20 @@ public class Main {
         MyWhile es3 = new MyWhile();
 
         String str;
-        do {
+        /*do {
             System.out.println("Inserisci una stringa");
             str = sc.nextLine();
             System.out.println(es3.suddividiStringa(str));
-        } while (!str.equals(":q"));
-
+        } while (!str.equals(":q"));*/
+        while (true) {
+            System.out.println("Inserisci una stringa");
+            str = sc.nextLine();
+            if (str.equals(":q")) {
+                break;
+            }
+        }
+        //Esercizio 4:
+        MyFor.contoAllaRovescia();
 
     }
 
